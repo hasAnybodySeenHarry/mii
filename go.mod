@@ -1,4 +1,4 @@
-module github.com/hasAnybodySeenHarry/meda
+module github.com/hasAnybodySeenHarry/mii
 
 go 1.23.4
 
