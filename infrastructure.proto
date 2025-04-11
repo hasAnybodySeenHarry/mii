@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package = "./;mii";
+
+message CreateComponentsRequest {
+    string config = 1;
+}
+
+message CreateComponentsResponse {
+    string config = 1;
+}
+
+message DestroyComponentsRequest {
+    string config = 1;
+}
+
+message DestroyComponentsResponse {
+    string config = 1;
+}
+
+service InfrastructureService {
+    rpc CreateComponents (CreateComponentsRequest) returns (CreateComponentsResponse);
+    rpc DestroyComponents (DestroyComponentsRequest) returns (DestroyComponentsResponse);
+}
